@@ -1,0 +1,73 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - custom-hello-world
+  - custom-corona-state-info
+  - custom-corona-district-info
+  - corona_intro
+  - symptoms
+  - covid
+  - fine
+  
+
+actions:
+  - action_hello_world
+  - action_corona_state_tracker
+  - action_corona_district_tracker
+
+
+entities:
+  - state
+  - district
+
+responses:
+  utter_greet:
+  - text:  Hey! How are you?Im your Corona Informative Bot Ask about Corona-Virus
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: Great to hear that, I am your bot, powered by Rasa and developed by Rekha Singh
+      and my name is covid_19_bot.
+  
+  utter_corona_intro:
+  - text: "Corona viruses are a large family of viruses which may cause ,illness
+      inanimals or humans. In humans, several coronaviruses are knownto cause respiratoryinfections
+      ranging from the common cold to moresevere diseases such as MiddleEast Respiratory
+      Syndrome (MERS)and Severe Acute Respiratory Syndrome (SARS).The most recentlydiscovered
+      coronavirus causes coronavirus disease COVID-19."
+  utter_covid:
+  - text: "COVID-19 is the infectious disease caused by the most recently discoveredcoronavirus.
+      This new virus and disease were unknown before the outbreak beganin Wuhan, China,
+      in December 2019."
+  utter_ans_sym:
+  - text: "The most common symptoms of COVID-19 are fever, tiredness, and dry
+      cough. Some patients may have aches and pains, nasal congestion, runny nose,
+      sore throat or diarrhea. These symptoms are usually mild and begin gradually.Some
+      people become infected but don’t develop any symptoms and dont feel unwell.Most
+      people (about 80%) recover from the disease without needing special treatment.Around
+      1 out of every 6 people who gets COVID-19 becomes seriously ill and develops
+      difficulty breathing." 
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
